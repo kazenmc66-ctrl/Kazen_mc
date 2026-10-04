@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Mineza_Craft - konten Minecraft Bedrock."
+    />
+    <title>Mineza_Craft | Minecraft Bedrock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html"
+          ><span class="brand-logo" aria-hidden="true"><img src="assets/mineza-logo.jpg" alt="Mineza_Craft logo" /></span>
+<span class="brand-text"
+            ><strong>Mineza<span>_Craft</span></strong
+            ><small>Bedrock Community</small></span
+          ></a
+        >
+        <nav class="site-nav" aria-label="Navigasi">
+          <a data-page-link href="index.html">Home</a
+          ><a data-page-link href="addons.html">Addons</a
+          ><a data-page-link href="maps.html">Maps</a
+          ><a data-page-link href="shaders.html">Shaders</a
+          ><a data-page-link href="about.html">About</a>
+        </nav>
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Ganti tema"
+            aria-pressed="false"
+          ></button
+          ><button
+            class="menu-toggle"
+            type="button"
+            aria-label="Buka menu"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <div class="hero-copy">
+            <label class="search-box home-search"
+              ><span aria-hidden="true">⌕</span
+              ><span class="sr-only">Cari konten</span
+              ><input
+                id="home-search"
+                type="search"
+                placeholder="Cari addon, map, shader..."
+                autocomplete="off"
+            /></label>
+            <p class="eyebrow">MINECRAFT BEDROCK COMMUNITY</p>
+            <h1 class="typing-title">Mineza_Craft</h1>
+            <p class="hero-title">Addons, Maps &amp; Shaders untuk Bedrock</p>
+            <p class="hero-text">
+              Temukan konten pilihan untuk membuat dunia Minecraft-mu lebih
+              seru, nyaman, dan kreatif.
+            </p>
+            <a class="button button-primary" href="addons.html"
+              >Jelajahi konten <span>→</span>
+              </a
+            >
+          </div>
+        </div>
+      </section>
+      
+      
+
+      <section
+        class="section container content-section"
+        data-home-section="Addon"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">KOLEKSI ADDON</p>
+            <h2>Addon Terbaru</h2>
+          </div>
+          <p class="section-note">Fitur baru untuk survival dan kreativitas.</p>
+        </div>
+        <div class="slider-shell">
+          <div class="card-slider" aria-live="polite"></div>
+          <div class="slider-controls">
+            <button
+              type="button"
+              onclick="moveSlider(this.closest('[data-home-section]'), -1)"
+              aria-label="Addon sebelumnya"
+            >
+              ←</button
+            ><button
+              type="button"
+              onclick="moveSlider(this.closest('[data-home-section]'), 1)"
+              aria-label="Addon berikutnya"
+            >
+              →
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section container content-section"
+        data-home-section="Map"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">KOLEKSI MAP</p>
+            <h2>Map Pilihan</h2>
+          </div>
+          <p class="section-note">
+            Dunia baru untuk petualangan, survival, dan mini game.
+          </p>
+        </div>
+        <div class="slider-shell">
+          <div class="card-slider" aria-live="polite"></div>
+          <div class="slider-controls">
+            <button
+              type="button"
+              onclick="moveSlider(this.closest('[data-home-section]'), -1)"
+              aria-label="Map sebelumnya"
+            >
+              ←</button
+            ><button
+              type="button"
+              onclick="moveSlider(this.closest('[data-home-section]'), 1)"
+              aria-label="Map berikutnya"
+            >
+              →
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section container content-section"
+        data-home-section="Shader"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">KOLEKSI SHADER</p>
+            <h2>Shader Terbaru</h2>
+          </div>
+          <p class="section-note">
+            Buat suasana dunia Bedrock terlihat lebih hidup.
+          </p>
+        </div>
+        <div class="slider-shell">
+          <div class="card-slider" aria-live="polite"></div>
+          <div class="slider-controls">
+            <button
+              type="button"
+              onclick="moveSlider(this.closest('[data-home-section]'), -1)"
+              aria-label="Shader sebelumnya"
+            >
+              ←</button
+            ><button
+              type="button"
+              onclick="moveSlider(this.closest('[data-home-section]'), 1)"
+              aria-label="Shader berikutnya"
+            >
+              →
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section tutorial-section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">TUTORIAL MINECRAFT BEDROCK</p>
+              <h2>Cara Pasang Addon, Map, dan Shader</h2>
+            </div>
+            <p class="section-note">
+              Ikuti langkahnya langsung dari video tutorial.
+            </p>
+          </div>
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/ijt5dxI0-BU"
+              title="Tutorial pasang addon, map, dan shader ke Minecraft Bedrock"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="community-box">
+          <p class="eyebrow">MULAI MENJELAJAH</p>
+          <h2>Konten Bedrock, lebih mudah ditemukan.</h2>
+          <p class="section-note" style="text-align: left; max-width: 560px">
+            Pilih kategori favoritmu dan buka setiap kartu untuk melihat
+            penjelasan, fitur, versi, serta link download.
+          </p>
+          <a class="button button-primary" href="about.html"
+            >Tentang kami <span>→</span></a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="index.html"
+            ><span class="brand-logo" aria-hidden="true"><img src="assets/mineza-logo.jpg" alt="Mineza_Craft logo" /></span>
+<span class="brand-text"
+              ><strong>Mineza<span>_Craft</span></strong
+              ><small>Komunitas Bedrock</small></span
+            ></a
+          >
+          <p>Tempat ringkas untuk menemukan konten Minecraft Bedrock.</p>
+        </div>
+        <div class="footer-links">
+          <a href="about.html">Tentang Kami</a
+          ><a
+            href="https://whatsapp.com/channel/0029Vb12716GZNCsfxlUix3G"
+            target="_blank"
+            rel="noopener"
+            >WhatsApp</a
+          ><a
+            href="https://www.tiktok.com/@danzxd_real"
+            target="_blank"
+            rel="noopener"
+            >TikTok</a
+          >
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 Mineza_Craft</span
+        ><span>Dibuat untuk pemain Bedrock</span>
+      </div>
+    </footer>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
